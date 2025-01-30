@@ -8,11 +8,15 @@ public class PlayerMove : MonoBehaviour
     private float horizontalInput;
     private float forwardInput;
     //private GameManager gameManager;
+    private Animator animator;
+    
+
 
     // Start is called before the first frame update
     void Start()
     {
         //gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -22,10 +26,14 @@ public class PlayerMove : MonoBehaviour
             horizontalInput = Input.GetAxis("Horizontal");
             forwardInput = Input.GetAxis("Vertical");
 
-            // Moves the car forward based on vertical input
-            transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
-            // Rotates the car based on horizontal input
-            transform.Translate(Vector3.right * Time.deltaTime * speed * horizontalInput);
+        Vector3 movement = new Vector3(horizontalInput, 0, forwardInput).normalized * speed * Time.deltaTime;
+        transform.Translate(movement, Space.World);
+
+        // Controlar animaciones con el Animator
+        // Cambiar el valor de "Speed" en el Animator según la velocidad de movimiento
+        animator.SetFloat("Speed_f", movement.magnitude);
+
+
         //}
     
     }
