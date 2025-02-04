@@ -23,11 +23,18 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
         //if (gameManager.isGameActive) { 
-            horizontalInput = Input.GetAxis("Horizontal");
-            forwardInput = Input.GetAxis("Vertical");
+        horizontalInput = Input.GetAxis("Horizontal");
+        forwardInput = Input.GetAxis("Vertical");
 
-        Vector3 movement = new Vector3(horizontalInput, 0, forwardInput).normalized * speed * Time.deltaTime;
+        Vector3 movement = new Vector3(-horizontalInput, 0, -forwardInput).normalized * speed * Time.deltaTime;
         transform.Translate(movement, Space.World);
+
+        if (movement.magnitude > 0)
+        {
+            // Usar LookRotation para rotar hacia la dirección del movimiento
+            Quaternion targetRotation = Quaternion.LookRotation(movement);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 0.1f);
+        }
 
         // Controlar animaciones con el Animator
         // Cambiar el valor de "Speed" en el Animator según la velocidad de movimiento
