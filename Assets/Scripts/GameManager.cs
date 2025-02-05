@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class GameManager : MonoBehaviour
     public int currentLevel = 1;
     private int correctPlacements = 0;
     private HashSet<GameObject> placedObjects = new HashSet<GameObject>();
+    public GameObject panel;
 
     [Header("Configuración de Nivel")]
     public List<string> htmlTags; // Lista de etiquetas que puedes modificar en Unity
@@ -19,17 +22,15 @@ public class GameManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            //DontDestroyOnLoad(gameObject); // Mantiene el GameManager entre escenas
-        }
-        else
-        {
-           //Destroy(gameObject); // Evita duplicados
         }
     }
 
     private void Start()
     {
         LoadLevel(currentLevel);
+        panel = GameObject.Find("Panel");
+        panel.SetActive(false);
+
     }
 
     public void LoadLevel(int level)
@@ -101,6 +102,7 @@ public class GameManager : MonoBehaviour
         else
         {
             Debug.Log("🏆 ¡Todos los niveles completados! No hay más escenas.");
+            panel.SetActive(true);
         }
     }
 

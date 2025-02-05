@@ -2161,8 +2161,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.5090836, y: 3.9867165, z: 3.5099432}
-  m_Center: {x: -0.08364897, y: 0.18300234, z: 0.007736271}
+  m_Size: {x: 1.5090836, y: 6.424754, z: 3.5099432}
+  m_Center: {x: -0.08364901, y: 1.4020221, z: 0.007736272}
 --- !u!23 &294458894
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3310,8 +3310,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281874488
-  m_fontColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
+    rgba: 4278321667
+  m_fontColor: {r: 0.009987891, g: 0.009672514, b: 0.009672514, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3367,12 +3367,12 @@ MonoBehaviour:
   m_margin: {x: 4.0964212, y: 3.0402415, z: 1.74845, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  _SortingLayer: 0
-  _SortingLayerID: 0
-  _SortingOrder: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 495481580}
   m_maskType: 0
+  _SortingLayer: 0
+  _SortingLayerID: 0
+  _SortingOrder: 0
 --- !u!23 &495481580
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4324,8 +4324,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281874488
-  m_fontColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4381,12 +4381,12 @@ MonoBehaviour:
   m_margin: {x: 4.0964212, y: 3.0402415, z: 1.74845, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  _SortingLayer: 0
-  _SortingLayerID: 0
-  _SortingOrder: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 634955168}
   m_maskType: 0
+  _SortingLayer: 0
+  _SortingLayerID: 0
+  _SortingOrder: 0
 --- !u!23 &634955168
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5800,8 +5800,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281874488
-  m_fontColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
+    rgba: 4278321666
+  m_fontColor: {r: 0.006040156, g: 0.006040156, b: 0.006040156, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5857,12 +5857,12 @@ MonoBehaviour:
   m_margin: {x: 4.0964212, y: 3.0402415, z: 1.74845, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  _SortingLayer: 0
-  _SortingLayerID: 0
-  _SortingOrder: 0
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 903439359}
   m_maskType: 0
+  _SortingLayer: 0
+  _SortingLayerID: 0
+  _SortingOrder: 0
 --- !u!23 &903439359
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7153,8 +7153,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.4891471, y: 3.9867165, z: 3.8938599}
-  m_Center: {x: -0.038160566, y: 0.18300235, z: -0.10051245}
+  m_Size: {x: 1.4891472, y: 6.328541, z: 3.8938599}
+  m_Center: {x: -0.038160533, y: 1.3539163, z: -0.10051245}
 --- !u!23 &1164226659
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12022,8 +12022,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.5093203, y: 3.9867165, z: 3.659946}
-  m_Center: {x: -0.044550877, y: 0.18300235, z: -0.14305796}
+  m_Size: {x: 1.5093204, y: 6.4903994, z: 3.659946}
+  m_Center: {x: -0.044550844, y: 1.4348433, z: -0.14305794}
 --- !u!23 &2039757344
 MeshRenderer:
   m_ObjectHideFlags: 0
