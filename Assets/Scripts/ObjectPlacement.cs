@@ -17,30 +17,30 @@ public class ObjectPlacement : MonoBehaviour
     }
 
     public Transform[] placementPoints; // Puntos donde los objetos deben ser colocados
-    public float placementRange = 1.5f; // Radio de aceptación para colocar el objeto
+    public float placementRange = 1.5f; // Radio de aceptaciï¿½n para colocar el objeto
     public int score = 0; // Puntos por colocar objetos correctamente
 
-    // Este método se llamará cuando el objeto sea soltado
+    // Este mï¿½todo se llamarï¿½ cuando el objeto sea soltado
     public void TryPlaceObject(GameObject objectToPlace)
     {
         foreach (Transform point in placementPoints)
         {
-            // Verificamos si el objeto está dentro del rango de la posición
+            // Verificamos si el objeto estï¿½ dentro del rango de la posiciï¿½n
             if (Vector3.Distance(objectToPlace.transform.position, point.position) <= placementRange)
             {
-                // Si el objeto está dentro del rango, asignamos puntos y lo dejamos en la posición correcta
+                // Si el objeto estï¿½ dentro del rango, asignamos puntos y lo dejamos en la posiciï¿½n correcta
                 objectToPlace.transform.position = point.position;
-                objectToPlace.transform.rotation = point.rotation; // Alineamos la rotación también si es necesario
+                objectToPlace.transform.rotation = point.rotation; // Alineamos la rotaciï¿½n tambiï¿½n si es necesario
                 objectToPlace.transform.parent = point; // Asignamos el objeto al punto
 
                 // Aumentamos el puntaje
                 score++;
-                Debug.Log("¡Objeto colocado correctamente! Puntos: " + score);
+                Debug.Log("ï¿½Objeto colocado correctamente! Puntos: " + score);
 
                 return; // Salimos del ciclo cuando encontramos el primer punto
             }
         }
 
-        Debug.Log("El objeto no está en un punto de colocación válido.");
+        Debug.Log("El objeto no estï¿½ en un punto de colocaciï¿½n vï¿½lido.");
     }
 }

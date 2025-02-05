@@ -8,6 +8,7 @@ public class HtmlElement : MonoBehaviour
     public string htmlTag; // Puede ser "<div>", "text", "</div>"
     public int correctPosition; // Posición correcta (1 = apertura, 2 = contenido, 3 = cierre)
     private TextMeshPro textUI; // Referencia al texto en el objeto
+    public bool isPlacedCorrectly = false;
 
     // Start is called before the first frame update
     void Start()
@@ -36,5 +37,9 @@ public class HtmlElement : MonoBehaviour
         {
             textUI.text = htmlTag;
         }
+    }
+    public void SetPlacedCorrectly(bool state)
+    {
+        isPlacedCorrectly = state;
     }
 }
